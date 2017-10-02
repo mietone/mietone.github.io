@@ -1,0 +1,21 @@
+# Site settings
+title: Hello World!
+header-img: img/home-bg.png
+email: paintfx@gmail.com
+copyright_name: mietone
+description: > # this means to ignore newlines until "baseurl:"
+  My Journey into The World of Programming
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  mietone
+learn_profile: mietone
+email_username: paintfx@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
