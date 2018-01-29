@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Classes and Instances"
-date:       2018-01-29 16:54:56 +0000
+date:       2018-01-29 11:54:57 -0500
 permalink:  classes_and_instances
 ---
 
