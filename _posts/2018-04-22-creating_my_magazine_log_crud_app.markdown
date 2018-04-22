@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Creating my magazine log CRUD app"
-date:       2018-04-22 05:16:35 +0000
+date:       2018-04-22 01:16:36 -0400
 permalink:  creating_my_magazine_log_crud_app
 ---
 
@@ -43,6 +43,7 @@ In The requirements, we had to make sure “Users can't modify content created b
 I used session[user_id] and checked to see if it matched the user’s id associated with the magazine to make sure it’s the person who created the magazine. I created helpers in application controller so I can refrain from repeating myself and so that the app doesn’t keep accessing the database every time it checks if the user is logged in or not.
 
 ```
+
   helpers do
 
     def logged_in?
