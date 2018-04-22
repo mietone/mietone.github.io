@@ -11,6 +11,7 @@ I used to be a rock chic :) I still like heavy music but I don’t listen to the
 In creating my magazine log CRUD app, I wanted to keep it pretty simple. I only have two models, a user and a magazine. A user has many magazines and a magazine belongs_to a user. Just by adding has_many and belongs_to, we get methods like find_by and build. Cool!
 
 ```
+
 class User < ActiveRecord::Base
   has_many :magazines
 
@@ -26,6 +27,7 @@ end
 After creating my tables (ran migrations) and models, I made sure the associations are working in tux. I like that I can test them to make sure associations are good to go before setting up Model, View and Controller(MVC). My MVC pretty much followed the same pattern as the fwitter lab although I did use ActiveRecord validations in my user model which I could not use in fwitter lab (test was not passing). I included has_secure_password and a simple authentication was in effect using Bcrypt. 
 
 ```
+
 class User < ActiveRecord::Base
   has_many :magazines
 
@@ -44,19 +46,19 @@ I used session[user_id] and checked to see if it matched the user’s id associa
 
 ```
 
-  helpers do
+helpers do
 
-    def logged_in?
-      !!current_user
-    end
-
-    def current_user
-      @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
-    end
-
+  def logged_in?
+    !!current_user
   end
+
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
+  end
+
+end
 	
-	```
+```
 	
 Routes were standard, just like fwitter lab and if and when it wasn’t working, I put binding.pry to figure out the problem. Actually the most tricky part was how to incorporate bootstrap into erb. I didn’t want to show a bare bone, text only app. I got the nav bar on top with 3 columns working but I still would need to go back and tweak for a more polished look. All in all, it wasn’t complicated to create and I had fun with CRUD. And I created something that is useful for me.
 
