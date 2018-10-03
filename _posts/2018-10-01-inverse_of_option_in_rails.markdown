@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "'inverse_of' option in Rails"
-date:       2018-10-01 22:09:19 +0000
+date:       2018-10-01 18:09:20 -0400
 permalink:  inverse_of_option_in_rails
 ---
 
